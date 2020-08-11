@@ -4,30 +4,34 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styleCustom.css">
     <script src="../assets/js/main.js"></script>
     <title>Churros Dessert |  Balikpapan</title>
 
 </head>
 <body>
-    <header>
+
+<!-- HEADER SECTION -->
+  <header>
+    <div class="section">
     <!--NAVBAR SECTION-->
-    <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
 
       <div class="container">
-
         <!-- SECTION LEFT NAVBAR -->
         <div class="navbar-brand">
-
-          <!-- LOGO BALIKPAPAN -->
-          <a class="navbar-item" href="index.html">
-            <img src="../assets/image/churros_logo.jpg" alt="LOGO BALIKPAPAN" />
+          <!-- LOGO CHURROS -->
+          <a class="navbar-item">
+            <img src="../assets/image/churros_logo.jpg" alt="OLA CHURROS" height="80" width="45" />
+          </a>
+          <!-- TITTLE CHURROS -->
+          <a class="navbar-item">
+            <span class="subtitle is-5">OLA CHURROS</span>
           </a>
 
-          <!-- BURGER NAV -->
-          <span class="navbar-burger" data-target="navbar-menu">
+           <!-- BURGER NAV -->
+           <span class="navbar-burger" data-target="navbar-menu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -35,13 +39,15 @@
 
         </div>
 
+         
+        
         <!-- SECTION RIGHT NAVBAR -->
         <div id="navbar-menu" class="navbar-menu">
           <div class="navbar-end">
-            <a href="#home" class="navbar-item">Home</a>
-            <a href="#product" class="navbar-item">Product</a>
-            <a href="#contact" class="navbar-item">Contact</a>
-            <a href="#gallery" class="navbar-item">Gallery</a>
+            <a href="#home" class="navbar-item"><span class="subtitle is-5">Home</span></a>
+            <a href="#product" class="navbar-item"><span class="subtitle is-5">Product</span></a>
+            <a href="#contact" class="navbar-item"><span class="subtitle is-5">Contact</span></a>
+            <a href="#gallery" class="navbar-item"><span class="subtitle is-5">Gallery</span></a>
           </div>
         </div>
 
@@ -49,7 +55,44 @@
       <!-- CONTAINER END -->
     </nav>
     <!-- NAVBAR SECTION OVER -->
+  </div>
   </header>
   <!-- HEADER SECTION OVER -->
+
+<!-- HOME SECTION -->
+  <div id="home">
+    <div class="section">
+      <!-- FIRST COLUMN ON THE LEFT -->
+      <div class="container">
+        <div class="columns is-vcentered is-primary">
+          <div class="column is-two-fifths">
+              <span class="title is-1">Lorem ipsum dolor sit, amet consectetur</span><br><br>
+              <span class="subtitle is-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, doloribus.</span><br><br>
+              <button class="button is-dark is-rounded">Get Started</button>
+          </div>
+
+          <!-- SECOND COLUMN ON THE RIGHT -->
+          <div class="column is-two-thirds">
+            <!-- ISOMETRIC IMAGE -->
+            <img src="../assets/image/demo_image.svg" height="10%" width="100%" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- BANNER SECTION -->
+      <div class="columns">
+        <div class="column">
+          <img class="is-hidden-mobile" src="assets/image/banner2.png" width="100%" alt="">
+        </div>
+        <div class="column">
+          <img class="is-hidden-mobile" src="assets/image/banner.png" width="100%" alt="">
+        </div>
+      </div>
+      <!-- BANNER SECTION OVER -->
+    </div>
+  </div>
+  <!-- HOME SECTION OVER -->
+
+
 </body>
 </html>
