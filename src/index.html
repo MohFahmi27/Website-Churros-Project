@@ -6,93 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/styleCustom.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="../assets/js/main.js"></script>
     <title>Churros Dessert |  Balikpapan</title>
 
 </head>
+
 <body>
 
 <!-- HEADER SECTION -->
-  <header>
-    <div class="section">
-    <!--NAVBAR SECTION-->
-    <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+<header>
+  <div class="section">
+  <!--NAVBAR SECTION-->
+  <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
 
-      <div class="container">
-        <!-- SECTION LEFT NAVBAR -->
-        <div class="navbar-brand">
-          <!-- LOGO CHURROS -->
-          <a class="navbar-item">
-            <img src="../assets/image/churros_logo.jpg" alt="OLA CHURROS" height="80" width="45" />
-          </a>
-          <!-- TITTLE CHURROS -->
-          <a class="navbar-item">
-            <span class="subtitle is-5">OLA CHURROS</span>
-          </a>
+    <div class="container">
+      <!-- SECTION LEFT NAVBAR -->
+      <div class="navbar-brand">
+        <!-- LOGO CHURROS -->
+        <a class="navbar-item">
+          <img src="../assets/image/churros_logo.jpg" alt="OLA CHURROS" height="80" width="45" />
+        </a>
+        <!-- TITTLE CHURROS -->
+        <a class="navbar-item">
+          <span class="subtitle is-5">OLA CHURROS</span>
+        </a>
 
-           <!-- BURGER NAV -->
-           <span class="navbar-burger" data-target="navbar-menu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </span>
-
-        </div>
-
-         
-        
-        <!-- SECTION RIGHT NAVBAR -->
-        <div id="navbar-menu" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="#home" class="navbar-item"><span class="subtitle is-5">Home</span></a>
-            <a href="#product" class="navbar-item"><span class="subtitle is-5">Product</span></a>
-            <a href="#contact" class="navbar-item"><span class="subtitle is-5">Contact</span></a>
-            <a href="#gallery" class="navbar-item"><span class="subtitle is-5">Gallery</span></a>
-          </div>
-        </div>
+          <!-- BURGER NAV -->
+          <span class="navbar-burger" data-target="navbar-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </span>
 
       </div>
-      <!-- CONTAINER END -->
-    </nav>
-    <!-- NAVBAR SECTION OVER -->
-  </div>
-  </header>
-  <!-- HEADER SECTION OVER -->
+      <!-- SECTION LEFT NAVBAR OVER -->
+      
+      <!-- SECTION RIGHT NAVBAR -->
+      <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="#home" class="navbar-item"><span class="subtitle is-5">Home</span></a>
+          <a href="#product" class="navbar-item"><span class="subtitle is-5">Product</span></a>
+          <a href="#contact" class="navbar-item"><span class="subtitle is-5">Contact</span></a>
+          <a href="#gallery" class="navbar-item"><span class="subtitle is-5">Gallery</span></a>
+        </div>
+      </div>
+      <!-- SECTION RIGHT NAVBAR OVER -->
+
+    </div>
+    <!-- CONTAINER END -->
+  </nav>
+  <!-- NAVBAR SECTION OVER -->
+</div>
+</header>
+<!-- HEADER SECTION OVER -->
 
 <!-- HOME SECTION -->
-  <div id="home">
-    <div class="section">
-      <!-- FIRST COLUMN ON THE LEFT -->
-      <div class="container">
-        <div class="columns is-vcentered is-primary">
-          <div class="column is-two-fifths">
-              <span class="title is-1">Lorem ipsum dolor sit, amet consectetur</span><br><br>
-              <span class="subtitle is-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, doloribus.</span><br><br>
-              <button class="button is-dark is-rounded">Get Started</button>
-          </div>
+<div id="home" class="image-home">
+  
+  <div class="section">
+    <div class="container">
+      <div class="columns is-vcentered is-primary">
+        <!-- FIRST COLUMN ON THE LEFT -->
+        <div class="column is-two-fifths">
+            <span class="title is-1">Lorem ipsum dolor sit, amet consectetur</span><br><br>
+            <span class="subtitle is-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, doloribus.</span><br><br>
+            <button class="button is-dark is-rounded">Get Started</button>
+        </div>
+        <!-- FIRST COLUMN ON THE LEFT OVER -->
 
-          <!-- SECOND COLUMN ON THE RIGHT -->
-          <div class="column is-two-thirds">
-            <!-- ISOMETRIC IMAGE -->
-            <img src="../assets/image/demo_image.svg" height="10%" width="100%" alt="">
-          </div>
+        <!-- SECOND COLUMN ON THE RIGHT -->
+        <div class="column is-two-thirds">
+          <!-- IMAGE FOR LANDING PAGE -->
+          <!-- NEED HD IMAGE -->
+          <img src="../assets/image/demo_landing1.png" class="image-home" alt="">
         </div>
+        <!-- SECOND COLUMN ON THE RIGHT OVER -->
       </div>
-
-      <!-- BANNER SECTION -->
-      <div class="columns">
-        <div class="column">
-          <img class="is-hidden-mobile" src="assets/image/banner2.png" width="100%" alt="">
-        </div>
-        <div class="column">
-          <img class="is-hidden-mobile" src="assets/image/banner.png" width="100%" alt="">
-        </div>
-      </div>
-      <!-- BANNER SECTION OVER -->
     </div>
   </div>
-  <!-- HOME SECTION OVER -->
 
+</div>
+<!-- HOME SECTION OVER -->
 
+<!-- PRODUCT SECTION -->
+<div id="product">
+  
+  <div class="columns is-gapless is-multiline">
+    <!-- BANNER SECTION -->
+    <div class="column is-full">
+      <div class="hero has-text-centered is-primary">
+        <img src="../assets/image/output-onlinepngtools.png" width="100%" height="85" alt="">
+      </div>    
+    </div>
+    <!-- BANNER SECTION OVER -->
+    <!-- PRODUCT TITLE SECTION LIST -->
+    <div class="column is-full">
+      <div class="hero is-primary">
+        <div class="container">
+          <h1 class="title is-3 is-dark">PRODUCT</h1>
+          <hr>
+        </div>
+      </div>  
+    </div>
+    <!-- PRODUCT TITLE SECTION LIST OVER -->
+    <!-- PRODUCT LIST -->
+    <div class="column is-full">
+      <div class="hero has-text-left is-primary">
+        <div class="container">
+          
+          
+        </div>  
+      </div>
+    </div>
+    <!-- PRODUCT LIST OVER -->
+  </div>
+  
+
+</div>
+<!-- PRODUCT SECTION OVER -->
+
+<!-- JAVASCRIPT LIBRARY SECTION -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script> 
+<!-- JAVASCRIPT LIBRARY SECTION OVER -->
 </body>
 </html>
