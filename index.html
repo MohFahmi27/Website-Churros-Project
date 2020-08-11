@@ -8,13 +8,12 @@
         <meta name="description" content="">
         <link rel="icon" type="image/x-icon" href="favicon.ico">    
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="Website-Churros-Project/assets/css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-spaced pt-0 pb-0" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-              
               <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -24,7 +23,7 @@
           
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item button is-warning has-text-dark is-outlined is-borderless is">
                   Home
                 </a>
                 <a class="navbar-item" href="/#produk">
@@ -49,8 +48,47 @@
                   </div>
                 </div>
               </section>
+            <section class="">
+              <div class="container is-fluid is-fullheight mt-5">
+                <div class="columns is-mobile is-centered">
+                  <div class="column is-half">
+                    <h4 class="is-size-1 is-primary has-text-centered sub-judul">
+                      Galeri
+                    </h4>
+                  </div>
+                </div>
+                <div class="columns mt-0 pt-0">
+                  <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+                    <img class="zoom" src="../Website-Churros-Project/assets/img/galeri1.jpg">
+                  </div>
+                  <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+                    <img class="zoom" src="../Website-Churros-Project/assets/img/galeri2.jpg">
+                  </div>
+                  <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+                    <img class="zoom" src="../Website-Churros-Project/assets/img/galeri1.jpg">
+                  </div>
+                  <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+                    <img class="zoom" src="../Website-Churros-Project/assets/img/galeri2.jpg">
+                  </div>
+                </div>
+                <div class="columns mt-0 pt-0">
+                  <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+                    <img class="zoom" src="../Website-Churros-Project/assets/img/galeri1.jpg">
+                  </div>
+                  <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+                    <img class="zoom" src="../Website-Churros-Project/assets/img/galeri2.jpg">
+                  </div>
+                  <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+                    <img class="zoom" src="../Website-Churros-Project/assets/img/galeri1.jpg">
+                  </div>
+                  <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+                    <img class="zoom" src="../Website-Churros-Project/assets/img/galeri2.jpg">
+                  </div>
+                </div>
+              </div>
+            </section>
         </main>
-        <script type="text/javascript" src="assets/js/javascript.js">
+        <script type="text/javascript">
         $(document).ready(function() {
             // Check for click events on the navbar burger icon
             $(".navbar-burger").click(function() {
@@ -59,6 +97,7 @@
                 $(".navbar-menu").toggleClass("is-active");
 
             });
+              
         });
         </script>
     </body>
