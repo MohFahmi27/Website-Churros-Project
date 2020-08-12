@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
     --main-color:#f9ca24;
 }
@@ -31,3 +32,19 @@
   .img-hover-zoom:hover img {
     transform: scale(1.5);
   }
+=======
+.banner
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+.image-home
+    {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      z-index: 2;
+    }
+>>>>>>> 33358d762dbdabf7580265a6c0441ec73eb82353
