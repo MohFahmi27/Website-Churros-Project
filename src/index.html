@@ -1,65 +1,185 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <title>Churros</title>
-        <base href="/">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="">
-        <meta name="description" content="">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <nav class="navbar is-spaced pt-0 pb-0" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <a href="assets/css/style.css">adjfalsdfjl</a>
-              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <a class="navbar-item button is-warning has-text-dark is-outlined is-borderless is">
-                  Home
-                </a>
-                <a class="navbar-item" href="/#produk">
-                  Produk
-                </a>
-                <a class="navbar-item" href="/#kontak">
-                    Kotak
-                </a>
-                <a class="navbar-item" href="/#galeri">
-                    Galeri
-                </a>
-              </div>
-            </div>
-          </nav>
-        <main>
-            <section class="hero is-warning is-fullheight-with-navbar">
-                <div class="hero-body">
-                  <div class="container">
-                    <p class="title">
-                      Fullheight hero with navbar
-                    </p>
-                  </div>
-                </div>
-              </section>
-        </main>
-        <script type="text/javascript" src="assets/js/javascript.js">
-        $(document).ready(function() {
-            // Check for click events on the navbar burger icon
-            $(".navbar-burger").click(function() {
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                $(".navbar-burger").toggleClass("is-active");
-                $(".navbar-menu").toggleClass("is-active");
+<html lang="en">
+<head>
 
-            });
-        });
-        </script>
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/styleCustom.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="../assets/js/main.js"></script>
+    <title>Churros Dessert |  Balikpapan</title>
+
+</head>
+
+<body>
+
+<!-- HEADER SECTION -->
+<header>
+  <div class="section">
+  <!--NAVBAR SECTION-->
+  <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+
+    <div class="container">
+      <!-- SECTION LEFT NAVBAR -->
+      <div class="navbar-brand">
+        <!-- LOGO CHURROS -->
+        <a class="navbar-item">
+          <img src="../assets/image/churros_logo.jpg" alt="OLA CHURROS" height="80" width="45" />
+        </a>
+        <!-- TITTLE CHURROS -->
+        <a class="navbar-item">
+          <span class="subtitle is-5">OLA CHURROS</span>
+        </a>
+
+          <!-- BURGER NAV -->
+          <span class="navbar-burger" data-target="navbar-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </span>
+
+      </div>
+      <!-- SECTION LEFT NAVBAR OVER -->
+      
+      <!-- SECTION RIGHT NAVBAR -->
+      <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="#home" class="navbar-item"><span class="subtitle is-5">Home</span></a>
+          <a href="#product" class="navbar-item"><span class="subtitle is-5">Product</span></a>
+          <a href="#contact" class="navbar-item"><span class="subtitle is-5">Contact</span></a>
+          <a href="#gallery" class="navbar-item"><span class="subtitle is-5">Gallery</span></a>
+        </div>
+      </div>
+      <!-- SECTION RIGHT NAVBAR OVER -->
+
+    </div>
+    <!-- CONTAINER END -->
+  </nav>
+  <!-- NAVBAR SECTION OVER -->
+</div>
+</header>
+<!-- HEADER SECTION OVER -->
+
+<!-- HOME SECTION -->
+<div id="home" class="image-home">
+  
+  <div class="section">
+    <div class="container">
+      <div class="columns is-vcentered is-primary">
+        <!-- FIRST COLUMN ON THE LEFT -->
+        <div class="column is-two-fifths">
+            <span class="title is-1">Lorem ipsum dolor sit, amet consectetur</span><br><br>
+            <span class="subtitle is-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, doloribus.</span><br><br>
+            <button class="button is-dark is-rounded">Get Started</button>
+        </div>
+        <!-- FIRST COLUMN ON THE LEFT OVER -->
+
+        <!-- SECOND COLUMN ON THE RIGHT -->
+        <div class="column is-two-thirds">
+          <!-- IMAGE FOR LANDING PAGE -->
+          <!-- NEED HD IMAGE -->
+          <img src="../assets/image/demo_landing1.png" class="image-home" alt="">
+        </div>
+        <!-- SECOND COLUMN ON THE RIGHT OVER -->
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- HOME SECTION OVER -->
+
+<!-- PRODUCT SECTION -->
+<div id="product">
+  
+  <div class="columns is-gapless is-multiline">
+    <!-- BANNER SECTION -->
+    <div class="column is-full">
+      <div class="hero has-text-centered is-primary">
+        <img src="../assets/image/output-onlinepngtools.png" width="100%" height="85" alt="">
+      </div>    
+    </div>
+    <!-- BANNER SECTION OVER -->
+    <!-- PRODUCT TITLE SECTION LIST -->
+    <div class="column is-full">
+      <div class="hero is-primary">
+        <div class="container">
+          <h1 class="title is-3 is-dark">PRODUCT</h1>
+          <hr>
+        </div>
+      </div>  
+    </div>
+    <!-- PRODUCT TITLE SECTION LIST OVER -->
+    <!-- PRODUCT LIST -->
+    <div class="column is-full">
+      <div class="hero has-text-left is-primary">
+        <div class="container">
+          
+          
+        </div>  
+      </div>
+    </div>
+    <!-- PRODUCT LIST OVER -->
+  </div>
+  
+
+</div>
+<!-- PRODUCT SECTION OVER -->
+<div id="galeri">
+  <div class="columns is-gapless is-multiline">
+    <!-- PRODUCT TITLE SECTION LIST -->
+    <div class="column is-full">
+      <div class="hero is-primary">
+        <div class="container">
+          <h1 class="title is-3 is-dark">Galeri</h1>
+          <hr>
+        </div>
+      </div>  
+    </div>
+    <!-- PRODUCT TITLE SECTION LIST OVER -->
+    <!-- PRODUCT LIST -->
+    <div class="column is-full">
+      <div class="hero has-text-left is-primary">
+        <div class="container">
+          <div class="columns mt-0 pt-0 galeri">
+            <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+              <img class="zoom" src="../assets/img/galeri1.jpg">
+            </div>
+            <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+              <img class="zoom" src="../assets/img/galeri2.jpg">
+            </div>
+            <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+              <img class="zoom" src="../assets/img/galeri1.jpg">
+            </div>
+            <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+              <img class="zoom" src="../assets/img/galeri2.jpg">
+            </div>
+          </div>
+          <div class="columns mt-0 pt-0 galeri">
+            <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+              <img class="zoom" src="../assets/img/galeri1.jpg">
+            </div>
+            <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+              <img class="zoom" src="../assets/img/galeri2.jpg">
+            </div>
+            <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+              <img class="zoom" src="../assets/img/galeri1.jpg">
+            </div>
+            <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 img-hover-zoom">
+              <img class="zoom" src="../assets/img/galeri2.jpg">
+            </div>
+          </div>          
+        </div>  
+      </div>
+    </div>
+    <!-- PRODUCT LIST OVER -->
+  </div>
+</div>
+<!-- GALERI SECTION -->
+<!-- JAVASCRIPT LIBRARY SECTION -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script> 
+<!-- JAVASCRIPT LIBRARY SECTION OVER -->
+</body>
 </html>
