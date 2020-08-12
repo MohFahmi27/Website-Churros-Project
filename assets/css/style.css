@@ -27,6 +27,7 @@
 .img-hover-zoom img {
   transition: transform .5s ease;
   height: inherit;
+  width: 100% !important;
 }
 
 /* [3] Finally, transforming the image when container gets hovered */
