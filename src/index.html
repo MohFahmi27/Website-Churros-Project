@@ -4,13 +4,12 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/styleCustom.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="../assets/js/main.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
     <title>Churros Dessert |  Balikpapan</title>
 
 </head>
@@ -28,7 +27,7 @@
       <div class="navbar-brand">
         <!-- LOGO CHURROS -->
         <a class="navbar-item">
-          <img src="../assets/image/churros_logo.jpg" alt="OLA CHURROS" height="80" width="45" />
+          <img src="../assets/image/churros_logo.jpg" alt="OLA CHURROS" height="70" width="50" />
         </a>
         <!-- TITTLE CHURROS -->
         <a class="navbar-item">
@@ -50,8 +49,8 @@
         <div class="navbar-end">
           <a href="#home" class="navbar-item"><span class="subtitle is-5">Home</span></a>
           <a href="#product" class="navbar-item"><span class="subtitle is-5">Product</span></a>
-          <a href="#contact" class="navbar-item"><span class="subtitle is-5">Contact</span></a>
           <a href="#gallery" class="navbar-item"><span class="subtitle is-5">Gallery</span></a>
+          <a href="#contact" class="navbar-item"><span class="subtitle is-5">Contact</span></a>
         </div>
       </div>
       <!-- SECTION RIGHT NAVBAR OVER -->
@@ -71,18 +70,23 @@
     <div class="container">
       <div class="columns is-vcentered is-primary">
         <!-- FIRST COLUMN ON THE LEFT -->
-        <div class="column is-two-fifths">
-            <span class="title is-1">Lorem ipsum dolor sit, amet consectetur</span><br><br>
-            <span class="subtitle is-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, doloribus.</span><br><br>
+        <div class="column is-half">
+            <span class="title is-1">Freshly made Churros and Dessert in Balikpapan.</span><br><br>
+            <span class="subtitle is-5">It’s crisp and soft, warm and satisfying.</span><br><br>
             <button class="button is-dark is-rounded">Get Started</button>
         </div>
         <!-- FIRST COLUMN ON THE LEFT OVER -->
 
         <!-- SECOND COLUMN ON THE RIGHT -->
-        <div class="column is-two-thirds">
+        <div class="column is-three-fifths">
           <!-- IMAGE FOR LANDING PAGE -->
           <!-- NEED HD IMAGE -->
-          <img src="../assets/image/demo_landing1.png" class="image-home" alt="">
+          <div class="card">
+            <div class="card-image">
+              <center><img class="shadowImage" src="../assets/image/churros_image1.jpg" width="450px" height="250px" alt=""></center>
+            </div>
+          </div>
+          <!-- <img src="../assets/image/demo_landing1.png" class="image-home" alt=""> -->
         </div>
         <!-- SECOND COLUMN ON THE RIGHT OVER -->
       </div>
@@ -123,6 +127,13 @@
       </div>
     </div>
     <!-- PRODUCT LIST OVER -->
+    <!-- BANNER ENDING SECTION -->
+    <div class="column is-full">
+      <div class="hero has-text-centered">
+        <img src="../assets/image/banner-ending.png" width="100%" height="85" alt="">
+      </div>    
+    </div>
+    <!-- BANNER ENDING SECTION OVER -->
   </div>
   
 
@@ -134,17 +145,17 @@
   <div class="columns is-gapless is-multiline">
     <!-- GALERI TITLE SECTION LIST -->
     <div class="column is-full">
-      <div class="hero is-primary">
+      <div class="hero">
         <div class="container">
           <h1 class="title is-3 is-dark">GALERI</h1>
-          <hr>
+          <hr class="rounded">
         </div>
       </div>  
     </div>
     <!-- GALERI TITLE SECTION LIST OVER -->
     <!-- GALERI LIST -->
     <div class="column is-full">
-      <div class="hero has-text-left is-primary">
+      <div class="hero has-text-left">
         <div class="container">
           <div class="columns mt-0 pt-0 galeri">
 
@@ -187,7 +198,7 @@
   <div class="columns is-gapless is-multiline">
     <!-- CONTACT TITLE SECTION LIST -->
     <div class="column is-full">
-      <div class="hero is-primary">
+      <div class="hero">
         <div class="container">
           <h1 class="title is-3 is-dark">CONTACT</h1>
           <hr>
@@ -197,7 +208,7 @@
     <!-- CONTACT TITLE SECTION LIST OVER -->
     <!-- CONTACT LIST -->
     <div class="column is-full">
-      <div class="hero has-text-left is-primary">
+      <div class="hero has-text-left">
         <div class="container is-fullhd">
           <div class="columns">
             <div class="column is-half">
@@ -230,10 +241,7 @@
               </div>
               <div class="field is-grouped">
                 <div class="control">
-                  <button class="button is-link">Kirim</button>
-                </div>
-                <div class="control">
-                  <button class="button is-link is-light">Batal</button>
+                  <button class="button is-dark">Kirim</button>
                 </div>
               </div>
             </div>          
@@ -244,6 +252,46 @@
   </div>
 </div>
 <!-- CONTACT SECTION OVER-->
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+        <div class="column is-4">
+            <div class="footer-logo">
+                <center><img src="../assets/image/churros-logo-footer.png" alt="logo Pemkot" height="175" width="250"></center>
+            </div>
+        </div>
+        <div class="column is-5">
+            <div class="title is-5 whiteText">About Us</div>            
+            <p class="is-medium">Jl. Sungai Ampal-Sumber Rejo Damai Balikpapan Kota <br> Kota Balikpapan,
+                Kalimantan Timur, 76114</p> <br> 
+            <p class="is-medium">No Telp: 0821-5477-5983</p>   
+            <p class="is-medium">Email: sweenamonbpp@gmail.com</p>
+        </div>
+        <div class="column">
+            <div class="title is-5 whiteText">Follow Us</div>
+            <div class="columns is-mobile">
+                <a class="column is-2" href="https://www.instagram.com/olachurros.balikpapan/">
+                  <img src="../assets/image/instagram-sketched.svg" height="32" width="32" alt="">
+                </a>
+                <a class="column is-2" href="https://www.facebook.com/olachurrosbalikpapan-101185644641662/?ref=page_internal">
+                  <img src="../assets/image/facebook.svg" height="32" width="32" alt="">
+                </a>
+              </div>
+        </div>
+    </div>
+  </div>
+  <br>
+  <div class="footer-bottom">
+    <div class="content has-text-centered">
+        <a href="https://www.instagram.com/weirdproject.or/"><img src="../assets/image/weird-project-logo.png" height="120px" width="220px" alt=""></a>
+        <div class="subtitle is-4 whiteText">Created by Weird Project | 2020</div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER SECTION OVER -->
+
 <!-- JAVASCRIPT LIBRARY SECTION -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script> 
 <!-- JAVASCRIPT LIBRARY SECTION OVER -->

@@ -4,10 +4,13 @@
 
 $churrosYellow: #f9d54b;
 $churrosYellow-inverted: #444255;
+$blackKinda: #424242;
 $family-sans-serif: 'Quicksand', sans-serif;
 
 $primary: $churrosYellow;
 $primary-inverted: $churrosYellow-inverted;
+$footer-background-color: $blackKinda;
+$footer-color:#dcdde1;
 
 @import "../css//bulma-0.9.0/sass/utilities/_all.sass";
 @import "../css/bulma-0.9.0/sass/base/_all.sass";

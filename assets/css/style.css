@@ -1,9 +1,11 @@
 :root{
     --main-color:#f9ca24;
 }
+
 .is-borderless{
     border:0px;
 }
+
 .sub-judul:after{
     content: "";
     position: absolute;
@@ -13,9 +15,11 @@
     margin-left:-120px;
     border-bottom: 10px solid #2d3436;
 }
+
 .sub-judul{
     position: relative;
 }
+
 /* The Image container */
 .img-hover-zoom {
   max-height: 300px;
@@ -36,6 +40,7 @@
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
+
 .galeri{
   height: fit-content;
   margin-bottom: 0px !important;
@@ -45,4 +50,20 @@
   .container.is-fullhd {
     max-width: 1344px;
   }
+}
+
+hr {
+  /* border-color: black; */
+  background-color: #424242;
+  height: 5px;
+  border-radius: 2px;
+}
+
+img.shadowImage {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 grey, 0 6px 20px 0 grey;
+}
+
+.whiteText {
+  color: #dcdde1;
 }
