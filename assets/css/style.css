@@ -40,3 +40,9 @@
   height: fit-content;
   margin-bottom: 0px !important;
 }
+
+@media screen and (max-width: 1407px) {
+  .container.is-fullhd {
+    max-width: 1344px;
+  }
+}
