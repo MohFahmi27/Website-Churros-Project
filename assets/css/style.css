@@ -1,14 +1,48 @@
-.banner
-    {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-.image-home
-    {
-      position: relative;
-      top: 0px;
-      left: 0px;
-      z-index: 2;
-    }
+:root{
+    --main-color:#f9ca24;
+}
+.is-borderless{
+    border:0px;
+}
+.sub-judul:after{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 50px;
+    bottom: 0;
+    margin-left:-120px;
+    border-bottom: 10px solid #2d3436;
+}
+.sub-judul{
+    position: relative;
+}
+/* The Image container */
+.img-hover-zoom {
+  max-height: 300px;
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+  height: inherit;
+  width: 100% !important;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.galeri{
+  height: fit-content;
+  margin-bottom: 0px !important;
+}
+
+@media screen and (max-width: 1407px) {
+  .container.is-fullhd {
+    max-width: 1344px;
+  }
+}
