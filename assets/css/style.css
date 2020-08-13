@@ -60,8 +60,8 @@ hr {
 }
 
 img.shadowImage {
-  border-radius: 10px;
-  box-shadow: 0 4px 10px 0 grey, 0 6px 20px 0 grey;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 grey, 0 10px 10px 0 grey;
 }
 
 .whiteText {
