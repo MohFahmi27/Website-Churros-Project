@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='../assets/css/slick-1.8.1/slick.css'>
     <link rel='stylesheet' href='../assets/css/slick-1.8.1/slick-theme.css'>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>    
@@ -65,7 +66,7 @@
 <!-- HEADER SECTION OVER -->
 
 <!-- THIS IS BANNER BACKGROUND -->
-<img class="absolute" src="../assets/image/banner23456.png" width="100%" alt="">
+<img class="absolute" src="../assets/image/banner234.png" width="100%" alt="">
 <div class="section"></div>
 <!-- ADD SOME SPACE HERE -->
 
@@ -143,7 +144,7 @@
     </div>
     <!-- PRODUCT TITLE SECTION LIST OVER -->
     <!-- PRODUCT LIST STYLE 1-->
-    <div class="column is-full">
+    <div class="column is-full is-hidden-mobile">
       <div class="hero is-primary">
         <div class="container">
           <center>
@@ -373,67 +374,73 @@
   </div>
 </div>
 <!-- GALERI SECTION OVER-->
+
+<!-- BACKGROUND FOR CONTACT CARD -->
+<img class="absolute" width="100%" src="../assets/image/background-banner.png" alt="">
+
 <!-- CONTACT SECTION -->
 <div id="contact">
-  <div class="section">
-    <div class="columns is-gapless is-multiline">
-      <!-- CONTACT TITLE SECTION LIST -->
-      <div class="column is-full">
-        <div class="hero">
+  <section class="section">
+      <div class="hero">
+        <div class="card">
           <div class="container">
-            <h1 class="title is-3 is-dark">CONTACT</h1>
-            <hr>
-          </div>
-        </div>  
-      </div>
-      <!-- CONTACT TITLE SECTION LIST OVER -->
-      <!-- CONTACT LIST -->
-      <div class="column is-full">
-        <div class="hero has-text-left">
-          <div class="container is-fullhd">
-            <div class="columns">
-              <div class="column is-half">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2184231004287!2d116.8550424104764!3d-1.246809299661401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df147b215bf00df%3A0xa7d405134e46bc88!2sSaia%20Kopi%20Balikpapan!5e0!3m2!1sid!2sid!4v1597196665325!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="columns is-vcentered">
+            <!-- COLUMN 1 SECTION -->
+              <div class="column is-half" style="margin: 25px;">
+                <br>
+                <br>
+                  <h1 class="title is-3 has-text-centered">Contact Us</h1>
+                  <center><hr style="width: 100px;"></center>
+                  <!-- MESSAGE FOR CUSTOMER -->
+                  <p style="line-height: 35px;" class="is-size-5 has-text-centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas voluptatibus sed dolor minus sunt</p>
+                  <br>
+                  <center>
+                    <!-- WHATSUPP ICON -->
+                    <figure class="image is-128x128">
+                      <img src="../assets/image/whatsapp.svg" alt="">
+                    </figure>
+                  </center>
+                  <br>
+                  <br>
+                  <center>
+                    <!-- BUTTON LINK TO WHATSAPP -->
+                    <a href="https://api.whatsapp.com/send?phone=6282154775983"><button class="button is-rounded is-dark">
+                      <span>Message Us</span>
+                      <span class="icon is-small">
+                        <i class="fas fa-arrow-right"></i>
+                      </span>
+                    </button></a>
+                    <!-- BUTTON LINK TO WHATSAPP OVER -->
+                  </center>
+                  <br>
+                  <br>
+                  <br>
               </div>
-              <div class="column ml-0 mr-0 pl-0 pr-0 pt-0 is-half">
-                <div class="field">
-                  <div class="control">
-                    <input class="input" type="text" placeholder="Masukkan nama anda">
-                  </div>
-                </div>
-                
-                <div class="field">
-                  <div class="control has-icons-left has-icons-right">
-                    <input class="input is-danger" type="email" placeholder="Masukkan email anda" value="hello@">
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                      <i class="fas fa-exclamation-triangle"></i>
-                    </span>
-                  </div>
-                  <p class="help is-danger">This email is invalid</p>
-                </div>
-                
-                <div class="field">
-                  <div class="control">
-                    <textarea class="textarea" placeholder="Masukkan pesan anda"></textarea>
-                  </div>
-                </div>
-                <div class="field is-grouped">
-                  <div class="control">
-                    <button class="button is-dark">Kirim</button>
-                  </div>
-                </div>
-              </div>          
-          </div>  
-        </div>
+            <!-- COLUMN 1 SECTION OVER -->
+            <!-- COLUMN 2 SECTION -->
+              <div class="column is-half">
+                <div class="container">
+                <figure class="image is-3by2">
+                  <img class="has-text-centered" src="../assets/image/undraw_personal_text_vkd8.svg" alt="">
+                </figure>              
+              </div>  
+              </div>
+            <!-- COLUMN 2 SECTION OVER -->          
+          </div>        
       </div>
-      <!-- CONTACT LIST OVER -->
     </div>
-  </div>
+    </div>
+</section>
 </div>
 <!-- CONTACT SECTION OVER-->
+
+<!-- MAP SECTION -->
+<section class="section"></section>
+<div class="hero">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2184231004287!2d116.8550424104764!3d-1.246809299661401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df147b215bf00df%3A0xa7d405134e46bc88!2sSaia%20Kopi%20Balikpapan!5e0!3m2!1sid!2sid!4v1597196665325!5m2!1sid!2sid" 
+  width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<!-- MAP SECTION OVER -->
 
 <!-- FOOTER SECTION -->
 <footer class="footer">

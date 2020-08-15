@@ -416,13 +416,18 @@ table th {
     content: "≻"; }
 
 .card {
-  background-color: white;
+  background-color: transparent;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   color: #4a4a4a;
-  max-width: 280px;
-  max-height: 499px;
-  margin: 3px;  
+  max-width: 100%;
+  max-height: 100%;
+  margin: 3px;
+  border-radius: 20px;  
   position: relative; }
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 .card-header {
   background-color: transparent;
