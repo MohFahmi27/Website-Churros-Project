@@ -146,8 +146,10 @@
     <!-- PRODUCT LIST STYLE 1-->
     <div class="column is-full">
       <div class="hero is-primary">
-        <div id="productCard">
+        <div id="productCard">        
+        <!-- DATA STORE IN main.js -->
         <div v-for="product in products">
+          <!-- LIST RENDERING USING VUEJS -->
           <div class="card" style="background-color: white; margin: 30px;">
             <div class="columns is-vcentered">
               <div class="column is-2">
@@ -167,13 +169,15 @@
                 <h1 class="title is-2 has-text-centered">{{product.productTitle}}</h1>
               </div>
               <div class="column is-3">
-                <div class="content is-small">
+                <div class="content is-medium">
                 <ul>
+                  <!-- NESTED DATA FOR OPTION -->
                   <li v-for="productOption in product.productOptions">{{productOption.option}}</li>
                 </ul>
               </div>
               </div>
               <div class="column has-text-centered" style="margin: 10px;">
+                <!-- whatsAppMsg use encoded string use in any other url -->
                 <a v-bind:href="product.whatsAppMsg"><button class="button is-rounded is-dark">
                   <span>Buy Now</span>
                   <span class="icon is-small">
@@ -183,6 +187,7 @@
               </div>
             </div>
           </div>
+      <!-- LIST RENDERING USING VUEJS OVER -->
       </div>
       </div>
     </div>

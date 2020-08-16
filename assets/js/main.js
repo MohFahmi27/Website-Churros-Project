@@ -43,6 +43,7 @@ new Vue({
             option: "Party (35pcs + 2 dip sauce 100gr) : Rp.90.000,-"
           }                        
           ],
+        // format : api.whatsapp.com/send?phone=XXXXXX&text=YYYYYY
         whatsAppMsg: "https://api.whatsapp.com/send?phone=6282154775983&text=Saya%20ingin%20membeli%20churros%20classic%20apakah%20untuk%20saat%20ini%20tersedia%20%3F"
       },
       {
@@ -88,7 +89,21 @@ new Vue({
             option: "Creamy Regal Party : Rp.135.000,-"
           },                        
           ],
-        whatsAppMsg: "https://api.whatsapp.com/send?phone=6282154775983&text=Saya%20ingin%20membeli%20churros%20oreo%20apakah%20untuk%20saat%20ini%20tersedia%20%3F%2C%20terima%20kasih%20"
+        whatsAppMsg: "https://api.whatsapp.com/send?phone=6282154775983&text=Saya%20ingin%20membeli%20creamy%20regal%20apakah%20untuk%20saat%20ini%20tersedia%20%3F%2C%20terima%20kasih%20"
+      },
+      {
+        productImage: "../assets/img/95149241_173770884079146_2180526919243496227_n.jpg",
+        productHarga: "Rp. 22k - 65k",
+        productTitle: "Dalgona Choco Pudding",
+        productOptions: [
+          {
+            option: "Dalgona Choco Pudding : Rp.23.000,-"
+          },
+          {
+            option: "Dalgona Choco Pudding : Rp.65.000,-"
+          }                        
+          ],
+        whatsAppMsg: "https://api.whatsapp.com/send?phone=6282154775983&text=Saya%20ingin%20membeli%20dalgona%20choco%20apakah%20untuk%20saat%20ini%20tersedia%20%3F%2C%20terima%20kasih%20"
       },
     ],
   },
