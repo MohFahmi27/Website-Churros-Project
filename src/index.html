@@ -144,166 +144,48 @@
     </div>
     <!-- PRODUCT TITLE SECTION LIST OVER -->
     <!-- PRODUCT LIST STYLE 1-->
-    <div class="column is-full is-hidden-mobile">
+    <div class="column is-full">
       <div class="hero is-primary">
-        <div class="container">
-          <center>
-            <div class="slider slider-product">
-
-              <div>
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img src="../assets/image/churros_image1.jpg" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4" style="color: #dcdde1;">Classic Churros</p>
-                      </div>
-                    </div>
-      
-                    <div class="content">
-                      <p class="whiteText">Regular : 25k</p>
-                      <p class="whiteText">Medium : 30k</p>
-                      <p class="whiteText">Party : 90k</p>
-                      <br>
-                    </div>
-                    <div class="content-footer">
-                      <a href="#"><button class="button is-primary">
-                          Read More
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+        <div id="productCard">
+        <div v-for="product in products">
+          <div class="card" style="background-color: white; margin: 30px;">
+            <div class="columns is-vcentered">
+              <div class="column is-2">
+                <center>
+                  <figure class="image is-128x128">
+                    <img style="margin-top: 10px;" v-bind:src="product.productImage" class="is-rounded" alt="">
+                  </figure>
+                </center>              
+                <br>
               </div>
-
-              <div>
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img src="../assets/image/churros_image1.jpg" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4" style="color: #dcdde1;">Classic Churros</p>
-                      </div>
-                    </div>
-      
-                    <div class="content">
-                      <p class="whiteText">Regular : 25k</p>
-                      <p class="whiteText">Medium : 30k</p>
-                      <p class="whiteText">Party : 90k</p>
-                      <br>
-                    </div>
-                    <div class="content-footer">
-                      <a href="#"><button class="button is-primary">
-                          Read More
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div class="column is-2">
+                <h1 class="subtitle is-5 has-text-centered">Harga</h1>              
+                <h2 class="subtitle is-6 has-text-centered">{{product.productHarga}}</h2>
+                <hr>
               </div>
-
-              <div>
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img src="../assets/image/churros_image1.jpg" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4" style="color: #dcdde1;">Classic Churros</p>
-                      </div>
-                    </div>
-      
-                    <div class="content">
-                      <p class="whiteText">Regular : 25k</p>
-                      <p class="whiteText">Medium : 30k</p>
-                      <p class="whiteText">Party : 90k</p>
-                      <br>
-                    </div>
-                    <div class="content-footer">
-                      <a href="#"><button class="button is-primary">
-                          Read More
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div class="column is-3">
+                <h1 class="title is-2 has-text-centered">{{product.productTitle}}</h1>
               </div>
-
-              <div>
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img src="../assets/image/churros_image1.jpg" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4" style="color: #dcdde1;">Classic Churros</p>
-                      </div>
-                    </div>
-      
-                    <div class="content">
-                      <p class="whiteText">Regular : 25k</p>
-                      <p class="whiteText">Medium : 30k</p>
-                      <p class="whiteText">Party : 90k</p>
-                      <br>
-                    </div>
-                    <div class="content-footer">
-                      <a href="#"><button class="button is-primary">
-                          Read More
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div class="column is-3">
+                <div class="content is-small">
+                <ul>
+                  <li v-for="productOption in product.productOptions">{{productOption.option}}</li>
+                </ul>
               </div>
-
-              <div>
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img src="../assets/image/churros_image1.jpg" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="title is-4" style="color: #dcdde1;">Classic Churros</p>
-                      </div>
-                    </div>
-      
-                    <div class="content">
-                      <p class="whiteText">Regular : 25k</p>
-                      <p class="whiteText">Medium : 30k</p>
-                      <p class="whiteText">Party : 90k</p>
-                      <br>
-                    </div>
-                    <div class="content-footer">
-                      <a href="#"><button class="button is-primary">
-                          Read More
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </div>
-            
+              <div class="column has-text-centered" style="margin: 10px;">
+                <a v-bind:href="product.whatsAppMsg"><button class="button is-rounded is-dark">
+                  <span>Buy Now</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </button></a>
+              </div>
             </div>
-          </center>        
-        </div>  
+          </div>
       </div>
+      </div>
+    </div>
     </div>
     <!-- PRODUCT LIST OVER -->
     <!-- BANNER ENDING SECTION -->
