@@ -19,9 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
         $target.classList.toggle("is-active");
       });
     });
-  }
-
-  OverlayScrollbars(document.querySelectorAll("body"), { });
+  }  
+  
 });
 
 new Vue({

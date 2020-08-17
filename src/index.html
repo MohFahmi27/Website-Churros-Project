@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/styleCustom.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='../assets/css/slick-1.8.1/slick.css'>
     <link rel='stylesheet' href='../assets/css/slick-1.8.1/slick-theme.css'>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>    
+    <script src="../assets/js/vue.js"></script>    
     <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <title>Churros Dessert |  Balikpapan</title>
-
 </head>
 
 <body>
@@ -34,7 +34,7 @@
           </figure>
         <!-- TITTLE CHURROS -->
         <a class="navbar-item">
-          <span class="subtitle is-5">OLA CHURROS</span>
+          <span class="subtitle is-5 is-family-sans-serif	">OLA CHURROS</span>
         </a>
 
           <!-- BURGER NAV -->
@@ -50,10 +50,10 @@
       <!-- SECTION RIGHT NAVBAR -->
       <div id="navbar-menu" class="navbar-menu">
         <div class="navbar-end">
-          <a href="#home" class="navbar-item"><span class="subtitle is-5">Home</span></a>
-          <a href="#product" class="navbar-item"><span class="subtitle is-5">Product</span></a>
-          <a href="#gallery" class="navbar-item"><span class="subtitle is-5">Gallery</span></a>
-          <a href="#contact" class="navbar-item"><span class="subtitle is-5">Contact</span></a>
+          <a href="#home" class="navbar-item"><span class="subtitle is-5 is-family-sans-serif">Home</span></a>
+          <a href="#product" class="navbar-item"><span class="subtitle is-5 is-family-sans-serif">Product</span></a>
+          <a href="#gallery" class="navbar-item"><span class="subtitle is-5 is-family-sans-serif">Gallery</span></a>
+          <a href="#contact" class="navbar-item"><span class="subtitle is-5 is-family-sans-serif">Contact</span></a>
         </div>
       </div>
       <!-- SECTION RIGHT NAVBAR OVER -->
@@ -79,8 +79,8 @@
       <div class="columns is-vcentered is-primary">
         <!-- FIRST COLUMN ON THE LEFT -->        
         <div class="column is-half">            
-            <span class="title is-1">Freshly made Churros and Dessert in Balikpapan.</span><br><br>
-            <span class="subtitle is-5">It’s crisp and soft, warm and satisfying.</span><br><br>
+            <span class="title is-1 is-family-sans-serif">Freshly made Churros and Dessert in Balikpapan.</span><br><br>
+            <span class="subtitle is-5 is-family-sans-serif">It’s crisp and soft, warm and satisfying.</span><br><br>
             <button class="button is-dark is-rounded">Get Started</button>
         </div>
         <!-- FIRST COLUMN ON THE LEFT OVER -->
@@ -124,9 +124,9 @@
     <div class="column is-full">
       <div class="hero is-primary">
         <div class="container">
-          <h1 class="subtitle is-1 is-dark has-text-centered">WELCOME</h1>
-          <p class="subtitle is-5 has-text-centered">"We know that everybody loves churros so we present to you our freshly made churros!"</p>
-          <p class="subtitle is-5 has-text-centered">"We know that churros are everyone’s best friends!"</p>
+          <h1 class="subtitle is-1 is-dark has-text-centered is-family-sans-serif">WELCOME</h1>
+          <p class="subtitle is-5 has-text-centered is-family-sans-serif">"We know that everybody loves churros so we present to you our freshly made churros!"</p>
+          <p class="subtitle is-5 has-text-centered is-family-sans-serif">"We know that churros are everyone’s best friends!"</p>
         </div>
       </div>  
     </div>
@@ -137,7 +137,7 @@
       <div class="hero is-primary">
         <div class="container">
           <br><br><br><br><br>
-          <h1 class="subtitle is-3">PRODUCT</h1>
+          <h1 class="subtitle is-3 is-family-sans-serif">PRODUCT</h1>
           <hr>
         </div>
       </div>  
@@ -161,25 +161,25 @@
                 <br>
               </div>
               <div class="column is-2">
-                <h1 class="subtitle is-5 has-text-centered">Harga</h1>              
-                <h2 class="subtitle is-6 has-text-centered">{{product.productHarga}}</h2>
+                <h1 class="subtitle is-5 has-text-centered is-family-sans-serif">Harga</h1>              
+                <h2 class="subtitle is-6 has-text-centered is-family-sans-serif">{{product.productHarga}}</h2>
                 <hr>
               </div>
               <div class="column is-3">
-                <h1 class="title is-2 has-text-centered">{{product.productTitle}}</h1>
+                <h1 class="title is-2 has-text-centered is-family-sans-serif">{{product.productTitle}}</h1>
               </div>
               <div class="column is-3">
                 <div class="content is-medium">
                 <ul>
                   <!-- NESTED DATA FOR OPTION -->
-                  <li v-for="productOption in product.productOptions">{{productOption.option}}</li>
+                  <li v-for="productOption in product.productOptions" class="is-family-sans-serif">{{productOption.option}}</li>
                 </ul>
               </div>
               </div>
               <div class="column has-text-centered" style="margin: 10px;">
                 <!-- whatsAppMsg use encoded string use in any other url -->
                 <a v-bind:href="product.whatsAppMsg"><button class="button is-rounded is-dark">
-                  <span>Buy Now</span>
+                  <span class="is-family-sans-serif	">Buy Now</span>
                   <span class="icon is-small">
                     <i class="fas fa-arrow-right"></i>
                   </span>
@@ -214,7 +214,7 @@
       <div class="column is-full">
         <div class="hero">
           <div class="container">
-            <h1 class="title is-3 is-dark">GALERI</h1>
+            <h1 class="title is-3 is-dark is-family-sans-serif">GALERI</h1>
             <hr class="rounded">
           </div>
         </div>  
@@ -269,17 +269,17 @@
 <div id="contact">
   <section class="section">
       <div class="hero">
-        <div class="card">
+        <div class="box" style="box-shadow: none;">
           <div class="container">
           <div class="columns is-vcentered">
             <!-- COLUMN 1 SECTION -->
               <div class="column is-half" style="margin: 25px;">
                 <br>
                 <br>
-                  <h1 class="title is-3 has-text-centered">Contact Us</h1>
+                  <h1 class="title is-3 has-text-centered is-family-sans-serif">Contact Us</h1>
                   <center><hr style="width: 100px;"></center>
                   <!-- MESSAGE FOR CUSTOMER -->
-                  <p style="line-height: 35px;" class="is-size-5 has-text-centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas voluptatibus sed dolor minus sunt</p>
+                  <p style="line-height: 35px;" class="is-size-5 has-text-centered is-family-sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas voluptatibus sed dolor minus sunt</p>
                   <br>
                   <center>
                     <!-- WHATSUPP ICON -->
@@ -343,7 +343,7 @@
       <!-- FOOTER LOGO SECITON OVER  -->
       <!-- FOOTER ABOUT US SECTION -->
         <div class="column is-5">
-            <div class="title is-5 whiteText">About Us</div>            
+            <div class="title is-5 whiteText is-family-sans-serif">About Us</div>            
             <p class="is-medium">Jl. Sungai Ampal-Sumber Rejo Damai, Balikpapan Kota</p>
             <p class="is-medium">Kota Balikpapan,</p>
             <p class="is-medium">Kalimantan Timur, 76114</p> <br> 
@@ -353,10 +353,10 @@
       <!-- FOOTER ABOUT US SECTION OVER -->
       <!-- FOOTER FOLLOW US SECTION -->
         <div class="column">
-            <div class="title is-5 whiteText">Follow Us</div>
+            <div class="title is-5 whiteText is-family-sans-serif">Follow Us</div>
               <div class="columns is-mobile">
                   <a class="column is-2" href="https://www.instagram.com/olachurros.balikpapan/">
-                    <img src="../assets/image/instagram-sketched.svg" height="32" width="32" alt="">
+                    <img src="../assets/image/instagram.svg" height="32" width="32" alt="">
                   </a>
                   <a class="column is-2" href="https://www.facebook.com/olachurrosbalikpapan-101185644641662/?ref=page_internal">
                     <img src="../assets/image/facebook.svg" height="32" width="32" alt="">
@@ -375,8 +375,8 @@
   <div class="footer-bottom">
     <div class="content has-text-centered">
       <!-- SELF-BRANDING CUY -->
-        <a href="https://www.instagram.com/weirdproject.or/"><img src="../assets/image/weird-project-logo.png" height="120px" width="220px" alt=""></a>
-        <div class="subtitle is-4 whiteText">Created by Weird Project | 2020</div>
+        <!-- <a href="https://www.instagram.com/weirdproject.or/"><img src="../assets/image/weird-project-logo.png" height="120px" width="220px" alt=""></a> -->
+        <div class="subtitle is-6 whiteText is-family-sans-serif">&copy; Ola Churros Balikpapan 2020</div>
     </div>
   </div>
   <!-- FOOTER BOTTOM SECTION OVER -->
