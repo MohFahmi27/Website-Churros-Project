@@ -38,7 +38,7 @@ $(".slider-nav-product").slick({
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true
+        centerMode: false
       }
     },
     {
