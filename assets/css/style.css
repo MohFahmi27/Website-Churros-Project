@@ -77,7 +77,9 @@ img.absolute {
 .cardProduct {
   transition: 0.3s;
   transition: transform .2s; 
-  margin: 46px;
+  margin-right: 46px;
+  margin-left: 46px;
+  margin-top: 50px;
   position: relative;  
   width: 300px;
   height: 350px;
@@ -104,19 +106,20 @@ img.absolute {
   z-index: 3;
   position: absolute;
   top: 275px;
-  left: 80px;
+  left: 85px;
 }
 
 .cardImage{ 
   position: relative;
   z-index: 1;
   width: 300px;
-  height: 190px;
-  border-radius: 10px;
+  height: 200px;
+  border-radius: 10px 10px 20px 20px;
 }
 
 figure .figureProduct {
   position: relative;
+  border-radius: 10px 10px 20px 20px;
   z-index: 3;
 }
 
@@ -124,11 +127,11 @@ figcaption {
   background-color: white;
   position: absolute;
   z-index: 2;  
-  width: 250px;
+  width: 265px;
   height: 125px;
-  border-radius: 10px;
+  border-radius: 10px 10px 20px 20px;
   top: 170px;
-  left: 25px;
+  left: 20px;
   box-shadow: 0 0.5em 1em -0.123em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   padding: 1rem;
 }

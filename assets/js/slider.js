@@ -16,25 +16,35 @@ $(".slider-nav-product").slick({
   centerMode:true,
   responsive: [
     {
-      breakpoint: 1040,
+      breakpoint: 1124,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-        infinite: true,
         centerMode: false
       }
     },
     {
-      breakpoint: 770,
+      breakpoint: 850,
       settings: {
-        centerMode: false,
+        arrows: false,
+        centerMode: true,
         slidesToShow: 2,
-        slidesToScroll: 2,        
+        slidesToScroll: 1,        
       }
     },
     {
       breakpoint: 480,
       settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true
+      }
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: false
