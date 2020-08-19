@@ -7,6 +7,45 @@ $(".slider-nav").slick({
     focusOnSelect: true,
   });
 
+$(".slider-nav-product").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: false,
+  focusOnSelect: true,
+  autoplay: false,
+  centerMode:true,
+  responsive: [
+    {
+      breakpoint: 1040,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode: false
+      }
+    },
+    {
+      breakpoint: 770,
+      settings: {
+        centerMode: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,        
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
 $("a").on('click', function(event) {
 
   // Make sure this.hash has a value before overriding default behavior
