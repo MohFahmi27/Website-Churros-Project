@@ -8,7 +8,7 @@ $(".slider-nav").slick({
   });
 
 $(".slider-nav-product").slick({
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,
   focusOnSelect: true,
@@ -38,7 +38,7 @@ $(".slider-nav-product").slick({
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: false
+        centerMode: true
       }
     },
     {
