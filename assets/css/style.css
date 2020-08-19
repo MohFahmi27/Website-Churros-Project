@@ -77,8 +77,8 @@ img.absolute {
 .cardProduct {
   transition: 0.3s;
   transition: transform .2s; 
-  /* margin-right: 46px;
-  margin-left: 46px; */
+  margin-right: 46px;
+  margin-left: 46px;
   margin-top: 50px;
   position: relative;  
   width: 300px;
