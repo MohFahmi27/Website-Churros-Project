@@ -9,11 +9,11 @@ $(".slider-nav").slick({
 
 $(".slider-nav-product").slick({
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
+  draggable: true,
   dots: false,
-  focusOnSelect: false,
   autoplay: false,
-  centerMode:true,
+  centerMode: true,
   responsive: [
     {
       breakpoint: 1124,
