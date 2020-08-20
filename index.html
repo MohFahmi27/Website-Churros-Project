@@ -617,10 +617,11 @@
 <!-- GALERI SECTION OVER-->
 
 <!-- BACKGROUND FOR CONTACT CARD -->
-<img class="absolute is-hidden-mobile" width="100%" src="assets/image/background-banner.png" alt="">
+<img class="absolute" width="100%" src="assets/image/background-banner.png" alt="">
 
 <!-- CONTACT SECTION -->
 <div id="contact">
+  <!-- CONTACT VIA WHATSAPP -->
   <section class="section">
       <div class="hero">
         <div class="box" style="box-shadow: none;">
@@ -671,16 +672,78 @@
       </div>
     </div>
     </div>
+  </section>
+  <!-- CONTACT VIA WHATSAPP OVER -->
+  <img src="assets/image/banner10.png" class="absolute is-hidden-mobile" style="width: 100%;height: 648px;";" alt="">
+  <!-- CONTACT VIA EMAIL -->
+  <section class="section">
+    <div class="hero">
+      <div class="box" style="box-shadow: none;">
+        <div class="container">
+        <div class="columns is-vcentered">
+          <!-- COLUMN 1 SECTION -->
+            <div class="column is-half">
+              <div class="container">
+              <figure class="image is-3by2">
+                <img class="has-text-centered" src="assets/image/email-section-icon.svg" alt="">
+              </figure>              
+            </div>  
+            </div>
+          <!-- COLUMN 1 SECTION OVER -->
+          <!-- COLUMN 2 SECTION -->            
+            <div class="column is-half" style="margin: 25px;">
+              <br>
+              <br>
+                <h1 class="title is-3 has-text-centered is-family-sans-serif">FeedBack</h1>
+                <center><hr style="width: 100px;"></center>
+                <form action="https://formspree.io/xeqrdwej" method="POST" submit="">
+                  <div class="field">
+                    <div class="control has-icons-left">
+                      <input class="input is-rounded is-family-sans-serif" type="text" placeholder="Masukkan nama anda" id="nama" name="name" required>
+                      <span class="icon is-medium is-left"><i class="fas fa-user is-left"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control has-icons-left">
+                      <input class="input is-rounded is-family-sans-serif" type="email" placeholder="Masukkan email anda" value="" id="email" name="_replyto" required>
+                      <span class="icon is-medium is-left"><i class="fas fa-envelope is-left"></i></span>
+                    </div>
+                  </div>                
+                  <div class="field">
+                    <div class="control">
+                      <textarea class="textarea is-family-sans-serif" placeholder="Masukkan pesan anda" id="pesan" name="pesan" required></textarea>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="field is-grouped is-grouped-right">
+                    <div class="control">
+                      <input type="submit" value="Kirim" class="button is-medium is-dark is-family-sans-serif" id="submit"></input>
+                    </div>
+                    <div class="control">
+                      <button class="button is-light is-medium is-family-sans-serif" id="batal">Batal</button>
+                    </div>
+                  </div>
+                </form>
+                </center>                          
+                
+            </div>
+          <!-- COLUMN 2 SECTION OVER -->          
+        </div>        
+    </div>        
+  </div> 
+  </div>
 </section>
+  <!-- CONTACT VIA EMAIL OVER -->  
 </div>
 <!-- CONTACT SECTION OVER-->
 
 <!-- MAP SECTION -->
 <div id="lokasi">
-  <section class="section"></section>
-  <div class="hero">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2184231004287!2d116.8550424104764!3d-1.246809299661401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df147b215bf00df%3A0xa7d405134e46bc88!2sSaia%20Kopi%20Balikpapan!5e0!3m2!1sid!2sid!4v1597196665325!5m2!1sid!2sid" 
-    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <div class="section">
+    <div class="hero">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2184231004287!2d116.8550424104764!3d-1.246809299661401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df147b215bf00df%3A0xa7d405134e46bc88!2sSaia%20Kopi%20Balikpapan!5e0!3m2!1sid!2sid!4v1597196665325!5m2!1sid!2sid" 
+      width="100%" height="480px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
   </div>
 </div>
 <!-- MAP SECTION OVER -->
@@ -743,6 +806,7 @@
 <script src="assets/js/main.js"></script>
 <script src='assets/css/slick-1.8.1/slick.min.js'></script>
 <script src="assets/js/slider.js"></script>
+<script src="assets/js/formFeedback.js"></script>
 <!-- JAVASCRIPT LIBRARY SECTION OVER -->
 </body>
 </html>
