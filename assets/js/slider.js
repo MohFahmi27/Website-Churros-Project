@@ -9,9 +9,9 @@ $(".slider-nav").slick({
 
 $(".slider-nav-product").slick({
   slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   dots: false,
-  focusOnSelect: true,
+  focusOnSelect: false,
   autoplay: false,
   centerMode:true,
   responsive: [
@@ -19,7 +19,7 @@ $(".slider-nav-product").slick({
       breakpoint: 1124,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         centerMode: false
       }
     },
@@ -29,7 +29,7 @@ $(".slider-nav-product").slick({
         arrows: false,
         centerMode: true,
         slidesToShow: 2,
-        slidesToScroll: 1,        
+        slidesToScroll: 2,        
       }
     },
     {

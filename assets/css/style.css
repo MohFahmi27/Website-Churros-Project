@@ -2,6 +2,10 @@
     --main-color:#f9ca24;
 }
 
+body{
+  overflow-x: scroll !important;
+}
+
 .is-borderless{
     border:0px;
 }
@@ -80,11 +84,11 @@ img.absolute {
   margin-top: 50px;
   position: relative;  
   width: 300px;
-  height: 350px;
+  height: 450px;
 }
 
 .cardProduct:hover {
-  transform: scale(1.035);
+  transform: scale(1.069);
 }
 
 .cardContentProduct {
@@ -103,8 +107,8 @@ img.absolute {
   background-color: transparent;
   z-index: 3;
   position: absolute;
-  top: 275px;
-  left: 85px;
+  top: 59%;
+  left: 30%;
 }
 
 .cardImage{ 
@@ -112,7 +116,8 @@ img.absolute {
   z-index: 1;
   width: 300px;
   height: 200px;
-  border-radius: 10px 10px 20px 20px;
+  border-radius: 5px 5px 20px 20px;
+  box-shadow: 0 0.5em 1em -0.123em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 }
 
 figure .figureProduct {
@@ -126,12 +131,27 @@ figcaption {
   position: absolute;
   z-index: 2;  
   width: 265px;
-  height: 125px;
+  height: auto;
   border-radius: 10px 10px 20px 20px;
   top: 170px;
   left: 20px;
   box-shadow: 0 0.5em 1em -0.123em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   padding: 1rem;
+}
+
+.collapsible {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0%;
+}
+
+.content-collasible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
 }
 
 /* width */
