@@ -2,6 +2,10 @@
     --main-color:#f9ca24;
 }
 
+body{
+  overflow-x: scroll !important;
+}
+
 .is-borderless{
     border:0px;
 }
@@ -74,17 +78,80 @@ img.absolute {
   margin: 0px;
 }
 
-.cardContact {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.cardProduct {
   transition: 0.3s;
-  width: 100%;
-  height: 550px;
-  border-radius: 20px;
-  z-index: 1;
+  transition: transform .2s; 
+  margin-top: 50px;
+  position: relative;  
+  width: 300px;
+  height: 450px;
 }
 
-.cardContact:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.cardProduct:hover {
+  transform: scale(1.069);
+}
+
+.cardContentProduct {
+  background-color: white;
+  position: absolute;
+  z-index: 1;  
+  width: 250px;
+  height: 125px;
+  border-radius: 10px;
+  top: 170px;
+  left: 25px;
+  box-shadow: 0 0.5em 1em -0.123em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  padding: 1rem; }
+
+.cardFooter {
+  background-color: transparent;
+  z-index: 3;
+  position: absolute;
+  top: 59%;
+  left: 30%;
+}
+
+.cardImage{ 
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px 5px 20px 20px;
+  box-shadow: 0 0.5em 1em -0.123em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+figure .figureProduct {
+  position: relative;
+  border-radius: 10px 10px 20px 20px;
+  z-index: 3;
+}
+
+figcaption {
+  background-color: white;
+  position: absolute;
+  z-index: 2;  
+  width: 265px;
+  height: auto;
+  border-radius: 10px 10px 20px 20px;
+  top: 170px;
+  left: 20px;
+  box-shadow: 0 0.5em 1em -0.123em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  padding: 1rem;
+}
+
+.collapsible {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0%;
+}
+
+.content-collasible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
 }
 
 /* width */
