@@ -24,7 +24,7 @@ $(".slider-nav-product").slick({
       }
     },
     {
-      breakpoint: 850,
+      breakpoint: 901,
       settings: {
         arrows: false,
         centerMode: true,
@@ -33,7 +33,7 @@ $(".slider-nav-product").slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 710,
       settings: {
         arrows: false,
         slidesToShow: 1,
@@ -42,7 +42,7 @@ $(".slider-nav-product").slick({
       }
     },
     {
-      breakpoint: 380,
+      breakpoint: 390,
       settings: {
         arrows: false,
         slidesToShow: 1,
