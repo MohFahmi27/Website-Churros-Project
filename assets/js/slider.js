@@ -18,9 +18,9 @@ $(".slider-nav-product").slick({
     {
       breakpoint: 1124,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        centerMode: false
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true
       }
     },
     {
@@ -28,8 +28,8 @@ $(".slider-nav-product").slick({
       settings: {
         arrows: false,
         centerMode: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,        
+        slidesToShow: 1,
+        slidesToScroll: 1,        
       }
     },
     {
