@@ -11,7 +11,8 @@ $(".slider-nav-product").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   draggable: true,
-  dots: false,
+  dots: true,
+  arrows: true,
   autoplay: false,
   centerMode: true,
   responsive: [
@@ -20,31 +21,34 @@ $(".slider-nav-product").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true
+        centerMode: false,
+        autoplay: false
       }
     },
     {
       breakpoint: 901,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         slidesToShow: 1,
-        slidesToScroll: 1,        
+        slidesToScroll: 1,
+        autoplay: false        
       }
     },
     {
       breakpoint: 710,
       settings: {
-        arrows: false,
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true
+        centerMode: true,
+        autoplay: false
       }
     },
     {
       breakpoint: 390,
       settings: {
-        arrows: false,
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: false
